@@ -8,16 +8,31 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+<nav class="w3-sidenav w3-card-2 w3-blue" id="mySidenav" style="width:35%">
+<div class="w3-container w3-theme-d2">
+  <span onclick="w3_close()" class="w3-closenav w3-right w3-large">X</span>
+  <br>
+</div>
+<br>
+<a href="#" class="w3-border w3-center">Borradores</a>
+<a href="#" class="w3-border w3-center">Encuestas</a>
+<a href="#" class="w3-border w3-center">Los mas...</a>
+<a href="#" class="w3-border w3-center">Estadistica</a>
+<a href="#" class="w3-border w3-center">Salir</a>
+</nav>
+
 <header class="w3-container w3-card-4 w3-theme w3-blue">
   <h1>
-    <i class="material-icons">menu</i>
+    <i class="material-icons" onclick="w3_open()">menu</i>
     Menu
   </h1>
 </header>
+<br>
 <div class="w3-container">
   <div class="w3-row">
     <div class="w3-col s12 m12">
-      <!--img src="/img/img_fjords.jpg" class="w3-round" alt="Norway"-->
+      <img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
     </div>
   </div>
   <div class="w3-row w3-margin-top">
@@ -45,5 +60,13 @@
   <button class="w3-btn w3-round-xlarge w3-blue w3-display-bottommiddle w3-padding-8">Enviar</button>
   </div>
 </div>
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
 </body>
 </html>
